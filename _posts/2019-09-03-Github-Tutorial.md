@@ -32,11 +32,15 @@ subtitle: 깃허브 설치 및 bash 사용법
 
 ![GithubHome](https://user-images.githubusercontent.com/50393277/64147595-becd9280-ce5b-11e9-8bb4-b1864ebc797c.png)
 
+<br><br>
+
 ### Git Bash
 
 Git 설치가 끝난 후 Git Bash를 실행하면 다음과 같은 화면이 나타납니다.
 
 ![bash1](https://user-images.githubusercontent.com/50393277/64147665-f9cfc600-ce5b-11e9-89a1-c96a44d414cb.png)
+
+<br><br>
 
 현재 Git에는 사용자 정보가 입력되어 있지 않는 상태입니다.
 
@@ -50,6 +54,8 @@ git config --global user.email "사용자 이메일"
 ```
 
 ![bash2](https://user-images.githubusercontent.com/50393277/64147705-2edc1880-ce5c-11e9-8775-99256d466ffc.png)
+
+<br><br>
 
 명령어를 이용하여 사용자의 정보를 조회가 가능합니다.
 
@@ -84,6 +90,8 @@ git init
 
 ![bash3](https://user-images.githubusercontent.com/50393277/64147962-fab52780-ce5c-11e9-8cbd-57e3f540083f.png)
 
+<br><br>
+
 이후 현재 폴더에 위치한 내용을 Local에 위치한 Git 저장소에 업로드하는 작업을 수행하겠습니다.
 
 ```
@@ -100,6 +108,8 @@ git commit -m "message"
 
 ![image](https://user-images.githubusercontent.com/50393277/64150216-bd539880-ce62-11e9-9496-00c217f6d108.png)
 
+<br><br>
+
 현재까지 과정을 완료하면 Local 환경에서 Git을 설정하고 저장소에 파일을 저장하는 과정을 마쳤습니다.
 
 이를 온라인에서 이용하기 위해서 Github라는 사이트를 사용합니다.
@@ -110,19 +120,27 @@ git commit -m "message"
 
 ![github1](https://user-images.githubusercontent.com/50393277/64149692-8df05c00-ce61-11e9-87af-254d24c24d80.png)
 
+<br><br>
+
 우측 상단의 New 버튼을 클릭합니다.
 
 ![github2](https://user-images.githubusercontent.com/50393277/64149749-baa47380-ce61-11e9-92ca-2b5538b0dfed.png)
 
+<br><br>
+
 추가 메뉴에서 정보를 입력합니다.
 
 ![github3](https://user-images.githubusercontent.com/50393277/64149784-d7d94200-ce61-11e9-9b44-855befe3b897.png)
+
+<br><br>
 
 추가가 완료되었으면 다음과 같은 화면이 나타납니다.
 
 이때, 저장소 주소를 복사하거나 기억합니다.
 
 ![github4](https://user-images.githubusercontent.com/50393277/64149857-09520d80-ce62-11e9-8237-effedc408c11.png)
+
+<br><br>
 
 아래의 명령어를 이용하여 현재 저장소에서 파일을 올릴 Github주소를 지정합니다.
 
@@ -135,9 +153,13 @@ git remote -v
 
 ![bash4](https://user-images.githubusercontent.com/50393277/64149929-25ee4580-ce62-11e9-9e50-04cf8d42283e.png)
 
+<br><br>
+
 해당 명령어를 입력하면 아래와 같이 Github에 로그인하라는 메시지 창이 나타납니다.
 
 ![login](https://user-images.githubusercontent.com/50393277/64150124-88474600-ce62-11e9-8c89-e30ee926c19d.png)
+
+<br><br>
 
 로그인을 완료하였다면 다음의 명령어를 이용하여 지정한 주소에 위치한 Github의 Repository에 파일이 업로드됩니다.
 
@@ -147,6 +169,17 @@ git remote -v
  
  ![bash5](https://user-images.githubusercontent.com/50393277/64150710-bf6a2700-ce63-11e9-81fb-ec8d8d397fc3.png)
  
+<br><br>
+
  이후 Github 페이지에 접속한 후 해당 저장소에 접속하면 파일이 업로드 된 것을 확인할 수 있습니다.
  
  ![github5](https://user-images.githubusercontent.com/50393277/64150760-dc9ef580-ce63-11e9-94f2-255f2c72bf08.png)
+
+<br><br>
+
+
+ 만약 저장소에서 있는 파일을 그대로 불러오고 싶다면 아래의 명령어를 이용하면 된다.
+ 
+ ```
+ git clone (repository address)
+ ```
