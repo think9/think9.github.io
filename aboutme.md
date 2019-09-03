@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 노는 게 제일 좋은 대학생 개발자
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### 이름 : 노명환
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- 공주대학교 컴퓨터공학과 4학년 재학중
+- 2020년 2월 졸업 예정
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
