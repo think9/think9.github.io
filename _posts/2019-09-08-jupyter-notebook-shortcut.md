@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Jupyter Notebook Shortcut
 subtitle: 주피터 노트북 단축키 모음
 ---
