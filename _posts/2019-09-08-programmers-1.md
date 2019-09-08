@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 2019-09-08-Programmers-저울.md
-subtitle: 프로그래머스 저울
+title: 프로그래머스 - 저울
+subtitle: 저울 문제풀이
 date: '2019-09-08'
 ---
 **## [프로그래머스 - 저울](https://programmers.co.kr/learn/courses/30/lessons/42886)**
