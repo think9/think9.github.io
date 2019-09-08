@@ -1,6 +1,5 @@
 ---
 layout: post
-published: false
 title: 2019-09-08-Programmers-저울.md
 subtitle: 프로그래머스 저울
 date: '2019-09-08'
