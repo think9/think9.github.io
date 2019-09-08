@@ -1,7 +1,8 @@
 ---
 layout: post
-title: 아나콘다 명령어 & 쥬피터 단축키 정리
-subtitle: Anaconda Prompt & Jupyter Notebook Shortcut
+title: 아나콘다 명령어
+subtitle: Anaconda Prompt Shortcut
+published: true
 ---
 
 ## 아나콘다 콘솔 명령어
@@ -87,4 +88,3 @@ conda list
 
 <br>
 
-## 주피터 노트북 단축키
