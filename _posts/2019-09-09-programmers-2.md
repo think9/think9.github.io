@@ -1,11 +1,10 @@
 ---
 layout: post
-published: false
 title: 프로그래머스 - 정수 삼각형
 subtitle: 정수 삼각형 문제풀이
 date: '2019-09-09'
 ---
-**## [프로그래머스 - 정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105)**
+## **[프로그래머스 - 정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105)**
 
 ### 분류 : Dynamic Programming
 
