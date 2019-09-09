@@ -4,7 +4,7 @@ title: 프로그래머스 - 저울
 subtitle: 저울 문제풀이
 date: '2019-09-08'
 ---
-**## [프로그래머스 - 저울](https://programmers.co.kr/learn/courses/30/lessons/42886)**
+## **[프로그래머스 - 저울](https://programmers.co.kr/learn/courses/30/lessons/42886)**
 
 ### 분류 : Greedy Algorithm (탐욕 알고리즘)
 
