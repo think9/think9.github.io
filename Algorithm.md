@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Algorithm
+subtitle: 문제 및 풀이
 published: true
 ---
 
