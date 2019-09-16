@@ -1,3 +1,9 @@
+---
+layout: post
+title: Algorithm
+published: true
+---
+
 ## Dynamic Programing
 
 [프로그래머스 - 정수 삼각형](https://think9.github.io/2019-09-09-programmers-43105/)
