@@ -121,4 +121,68 @@ foods = soup.find_all(match_class(["card-title"]))[1:]
 
 ## 정보 가공 및 출력하기
 
+위처럼 복잡한 문자열에서 필요한 부분만 뽑아내보도록 하자.
 
+각각의 문자열을 살펴보면 아래와 같은 구조로 이루어져있는 것을 확인할 수 있다.
+
+**<div class="date-title" data-v-de55ce24="">9월 17일 (오늘, 화)</div>**
+
+자세하게 살펴보면 div 태그로 둘러쌓여 있기 때문에 ">"와 "<" 문자를 기준으로 나눈다면 그 사이에 우리가 원하는 문자열이 위치해있다는 것을 알 수 있다.
+
+이제 ">"와 "<"을 기준으로 그 사이에 있는 문자열만 추출한다면 원하는 정보를 얻을 수 있다는 사실을 알 수 있다.
+
+```python
+data = str(data).split(">")[1].split("<")[0]
+```
+
+이와 같은 코드를 작성 후 실행해보면
+
+![image](https://user-images.githubusercontent.com/50393277/65039841-1e648b80-d98e-11e9-9cf3-62ac5146d639.png)
+
+정상적으로 동작하는 것을 확인할 수 있다.
+
+이를 이용하여 아래와 같은 코드를 완성하였다.
+
+```python
+#Get elements with matching class name
+def match_class(target):                                                        
+    def do_match(tag):                                                          
+        classes = tag.get('class', [])                                          
+        return all(c in classes for c in target)                                
+    return do_match
+
+from bs4 import BeautifulSoup as bs
+import requests
+
+#Get elemnets from url
+url = "https://bds.bablabs.com/restaurants/MTA5NDAwMjU=?campus_id=wqNWwIvBVE"
+page = requests.get(url)
+data = page.text
+soup = bs(data, 'html.parser')
+
+#get date and food list
+dates = soup.find_all(match_class(["date-title"]))
+times = soup.find_all("span")
+times = times[3:]
+foods = soup.find_all(match_class(["card-title"]))[1:]
+
+#Print element of dates and foods
+for i in range(len(foods)):
+    if i%3 == 0:
+        print()
+        date = str(dates[int(i/3)]).split(">")[1].split("<")[0]
+        print(date)
+    
+    print(str(times[i]).split(">")[1].split("<")[0])
+    food = str(foods[i]).split(">")[1].split("<")[0]
+    food = food.replace("&amp;", "&")
+    print(food)
+```
+
+<br>
+
+### 출력 결과
+
+![image](https://user-images.githubusercontent.com/50393277/65039985-5ff53680-d98e-11e9-8b4b-8c28c4ede73e.png)
+
+추후에 이를 이용한 카카오톡 챗봇 제작 or 라즈베리 파이를 이용한 웹서버를 구상중에 있다.
