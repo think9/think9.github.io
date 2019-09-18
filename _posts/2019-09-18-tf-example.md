@@ -127,8 +127,3 @@ with tf.Session() as sess:
 plt.legend(loc="best")
 plt.show()
 ```
-
-{% highlight python %}
-def hello():
-    print("Hi")
-{% endhighlight %}
