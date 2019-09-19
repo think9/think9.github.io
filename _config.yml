@@ -160,6 +160,8 @@ paginate: 5
 
 kramdown:
   input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
