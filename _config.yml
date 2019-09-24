@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Think9
+title: Que Sera Sera
 
 # Short description of your site
-description: Be Ambitious
+description: Whatever will be will be
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -89,7 +89,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Think9 Blog Home"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "Que Sera Sera"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
