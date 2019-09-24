@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: 노는 게 제일 좋은 대학생 개발자
+subtitle: 행복한 대학생 개발자
 ---
 
 ### 이름 : 노명환
