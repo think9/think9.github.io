@@ -38,15 +38,15 @@ In this program, we select the ROI before running program. So we can find color 
 
 ![flow](https://user-images.githubusercontent.com/50393277/67205546-ee0b8380-f44a-11e9-9f4a-fc62e569c04e.jpg)
 
-0. Select ROI
+* Select ROI
 
 After run the program, select ROI in first frame of video.
 
-1. Gaussian Smoothing
+* Gaussian Smoothing
 
 First we need to smooth the image. It is helpful to reduce image noise so we can get better result.
 
-2. Histogram
+* Histogram
 
 Histogram is counting set of each pixel values. In ROI, the brightest area is lane because it has a white color.
 
@@ -54,14 +54,14 @@ Histogram is counting set of each pixel values. In ROI, the brightest area is la
 
 In above hisgorams, we find local maximum value from right side. It is bright area so around of maximum value of index is the lane's pixel value.
 
-3. Edge Detection
+* Edge Detection
 
 ![canny](https://user-images.githubusercontent.com/50393277/67205552-ef3cb080-f44a-11e9-8fb4-9498aa5814e5.png)
 
 
 Apply Canny Edge detecion to find edges in frame.
 
-4. Hough Transform
+* Hough Transform
 
 After we find white areas we detect lines in frame. That is the lane on the road!
 
